@@ -45,10 +45,10 @@ module.exports = {
       test: /\.jpg$/,
       loader: "file-loader"
     }, {
-      test: /\.(jpg|png)$/,
+      test: /\.(png|jpeg)$/,
       loader: 'url-loader',
       options: {
-        limit: 2500000
+        limit: 250000000
       },
       // An array of paths or an individual path
       include: path.join(__dirname, 'app/img')

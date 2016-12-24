@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/App.css';
-import ThankYou from '../img/thankYou.jpg';
+import ThankYou from '../img/ThankYou.jpg';
 import LogoImg from '../img/thanks1.png';
 
 export default class Thanks extends React.Component {
@@ -11,7 +11,7 @@ export default class Thanks extends React.Component {
           <p className={styles['text-center']}>Thank you for submitting your
           application. You will receive an email from DoveCasting@dove.com
           confirming that we have received your details.</p>
-          <img src={LogoImg} />
+          <img src={ThankYou} />
           <p className="soical-icons">
             <span>share</span>
             <a href="https://www.facebook.com/" target="_blank">
