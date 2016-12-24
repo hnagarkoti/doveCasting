@@ -1,14 +1,17 @@
 import React from 'react';
+import styles from '../styles/App.css';
+import ThankYou from '../img/thankYou.jpg';
+import LogoImg from '../img/thanks1.png';
 
 export default class Thanks extends React.Component {
   render(){
     return(
-        <div className="text-center landing-info">
+        <div className={styles['text-center'] + " " + styles['landing-info']}>
           <h1>Dove Casting</h1>
-          <p className="text-center">Thank you for submitting your
+          <p className={styles['text-center']}>Thank you for submitting your
           application. You will receive an email from DoveCasting@dove.com
           confirming that we have received your details.</p>
-          <img src="../app/img/thank-you.jpg" />
+          <img src={LogoImg} />
           <p className="soical-icons">
             <span>share</span>
             <a href="https://www.facebook.com/" target="_blank">
