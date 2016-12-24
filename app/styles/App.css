@@ -1,5 +1,64 @@
 /*Tu, 20 Dec 2016 | Author: VijayaNaidu */
 
-.container {
-    background-color: lightblue;
+body {
+    font-family: Helvetica !important;background: #ebebeb;
+    font-size: 14px;line-height: 1.42857143;color: #333;
+}
+#app{
+    float: left;width: 100%;height: auto;background: #ebebeb;
+}
+.container{
+    padding-right: 15px;padding-left: 15px;margin-right: auto;
+    margin-left: auto;width: 960px;display: block;
+}
+.background{
+    background-color: #fff;float: left;width: 100%;height: auto;
+}
+.topheader{
+    float: left;width: 100%;padding: 10px 0;margin: 0;
+}
+.topheader img{
+    float: left;width: 100%;height: auto;
+}
+.content{
+    float: left;width: 100%;height: auto;
+}
+.landinginfo{
+    float: left;width: 100%;padding: 0 19%;
+    margin: 0;height: auto;text-align: center;
+    box-sizing: border-box;
+}
+.landinginfo h1{
+    font-family: 'Helvetica'; color: #203979;
+    float: left;width: 100%;height: auto;margin: 20px 0px;
+    font-size: 36px;
+}
+.landinginfo p{
+    color:#5b5b5b;float: left;width: 100%;height: auto;
+    margin-bottom: 40px; text-align: left;font-size: 14px;
+    line-height: 18px;
+}
+.landinginfo h5{
+    color:#686c99;float: left;width: 100%;height: auto;
+    font-size: 20px;margin: 20px 0px;
+}
+.landinginfo .videoimg{
+    float: left;width: 100%;height: auto;
+}
+.landinginfo button{
+    margin: 50px 0px 0px;border: 2px solid #dfc686;background: transparent;
+    text-transform: capitalize;padding: 7px 45px;font-size: 12px;
+    color: #203979;
+}
+.landinginfo button:focus{
+    outline: none;
+}
+.landinginfo .soicalicons{
+    float: left; width: 100%; height: auto; margin: 40px 0 40px; padding: 0;
+}
+.share{
+    padding-right: 14px;position: relative;bottom: 5px;z-index: 0;
+}
+.imgicons{
+    width:28px; height:28px;padding-right: 5px;
 }

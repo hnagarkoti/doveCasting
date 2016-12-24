@@ -1,29 +1,32 @@
 import React from 'react';
 import styles from '../styles/App.css';
-import ThankYou from '../img/ThankYou.jpg';
-import LogoImg from '../img/thanks1.png';
+
+import ThankuImg from '../img/thank-you.jpg';
+import FaceImg from '../img/facebook.png';
+import TwitImg from '../img/twitter.png';
+import MailImg from '../img/gmail.png';
 
 export default class Thanks extends React.Component {
   render(){
     return(
-        <div className={styles['text-center'] + " " + styles['landing-info']}>
+        <div className={styles.landinginfo}>
           <h1>Dove Casting</h1>
-          <p className={styles['text-center']}>Thank you for submitting your
-          application. You will receive an email from DoveCasting@dove.com
+          <p>Thank you for submitting your 
+          application. You will receive an email from DoveCasting@dove.com 
           confirming that we have received your details.</p>
-          <img src={ThankYou} />
-          <p className="soical-icons">
-            <span>share</span>
+          <img className={styles.thankuimg} src={ThankuImg} />
+          <span className={styles.soicalicons}>
+            <span className={styles.share}>share</span>
             <a href="https://www.facebook.com/" target="_blank">
-              <i className="fa fa-facebook"></i>
+              <img src={FaceImg} className={styles.imgicons}/>
             </a>
             <a href="https://twitter.com/" target="_blank">
-              <i className="fa fa-twitter"></i>
+              <img src={TwitImg} className={styles.imgicons}/>
             </a>
-            <a href="#!" target="_blank">
-              <i className="fa fa-envelope-o"></i>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src={MailImg} className={styles.imgicons}/>
             </a>
-          </p>
+        </span>
       </div>
     );
   }

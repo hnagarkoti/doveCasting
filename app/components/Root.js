@@ -7,9 +7,9 @@ export class Root extends React.Component {
   render(){
     return(
       <div className={styles.container}>
-        <div>
+        <div className={styles.background}>
           <Header/>
-          <div>
+          <div className={styles.content}>
             {this.props.children}
           </div>
         </div>
