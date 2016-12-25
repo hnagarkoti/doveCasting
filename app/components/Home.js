@@ -35,6 +35,7 @@ class LandingPage extends React.Component {
            <Video controls loop
 
           copyKeys={{ sourceError: 'Video cannot be played in this browser.',
+            poster: {VideoImg},
             play: 'Play video',
             pause: 'Pause video',
             mute: 'Mute video',
