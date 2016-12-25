@@ -1,6 +1,6 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
-// import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay } from 'react-html5video';
+import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay } from 'react-html5video';
 
 // require('react-html5video/dist/ReactHtml5Video.css');
 // require('react-html5video/dist/ReactHtml5Video.js');
@@ -21,30 +21,30 @@ import MailImg from '../img/gmail.png';
 class LandingPage extends React.Component {
   constructor(props){
     super(props);
-    this.playPause.bind(this);
-    this.makeBig.bind(this);
-    this.makeSmall.bind(this);
-    this.makeNormal.bind(this);
+    // this.playPause.bind(this);
+    // this.makeBig.bind(this);
+    // this.makeSmall.bind(this);
+    // this.makeNormal.bind(this);
   }
-  playPause(){
-    var myVideo = document.getElementById("video1");
-    if (myVideo.paused)
-        myVideo.play();
-    else
-        myVideo.pause();
-  }
-  makeBig() {
-    var myVideo = document.getElementById("video1");
-    myVideo.width = screen.width;
-  }
-  makeSmall() {
-    var myVideo = document.getElementById("video1");
-    myVideo.width = 320;
-  }
-  makeNormal() {
-    var myVideo = document.getElementById("video1");
-    myVideo.width = 420;
-  }
+  // playPause(){
+  //   var myVideo = document.getElementById("video1");
+  //   if (myVideo.paused)
+  //       myVideo.play();
+  //   else
+  //       myVideo.pause();
+  // }
+  // makeBig() {
+  //   var myVideo = document.getElementById("video1");
+  //   myVideo.width = screen.width;
+  // }
+  // makeSmall() {
+  //   var myVideo = document.getElementById("video1");
+  //   myVideo.width = 320;
+  // }
+  // makeNormal() {
+  //   var myVideo = document.getElementById("video1");
+  //   myVideo.width = 420;
+  // }
   render(){
     return(
         <div>
@@ -57,17 +57,17 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
-           <video id="video1" width="560" poster={VideoImg}>
+           {/*}<video id="video1" width="560" poster={VideoImg}>
             <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
           <button onClick={this.playPause}>Play/Pause</button>
           <button onClick={this.makeBig}>Big</button>
           <button onClick={this.makeSmall}>Small</button>
-          <button onClick={this.makeNormal}>Normal</button>
+          <button onClick={this.makeNormal}>Normal</button> */}
             {/*<img className={styles.videoimg} src={VideoImg} /> */}
 
-           {/*}<Video controls loop
+           <Video controls loop
 
           copyKeys={{ sourceError: 'Video cannot be played in this browser.',
             poster: {VideoImg},
@@ -86,7 +86,7 @@ class LandingPage extends React.Component {
                 <Mute />
                 <Fullscreen />
             </Controls>
-        </Video> */}
+        </Video>
       </div>
     );
   }
