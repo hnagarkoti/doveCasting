@@ -1,14 +1,14 @@
 import React from 'react';
 import { browserHistory } from 'react-router'
-import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay } from 'react-html5video';
+// import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay } from 'react-html5video';
+
 // require('react-html5video/dist/ReactHtml5Video.css');
 // require('react-html5video/dist/ReactHtml5Video.js');
 import styles from '../styles/App.css';
-// import '../styles/ReactHtml5Video.css';
-// import '../js/ReactHtml5Video.js';
 
-require('../styles/ReactHtml5Video.css');
-require('../js/ReactHtml5Video.js');
+
+// require('../styles/ReactHtml5Video.css');
+// require('../js/ReactHtml5Video.js');
 
 import VideoImg from '../img/video-img.jpg';
 import FaceImg from '../img/facebook.png';
@@ -19,6 +19,33 @@ import MailImg from '../img/gmail.png';
 // import '../js/ReactHtml5Video.js';
 
 class LandingPage extends React.Component {
+  constructor(props){
+    super(props);
+    this.playPause.bind(this);
+    this.makeBig.bind(this);
+    this.makeSmall.bind(this);
+    this.makeNormal.bind(this);
+  }
+  playPause(){
+    var myVideo = document.getElementById("video1");
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+  }
+  makeBig() {
+    var myVideo = document.getElementById("video1");
+    console.log('called');
+    myVideo.width = 560;
+  }
+  makeSmall() {
+    var myVideo = document.getElementById("video1");
+    myVideo.width = 320;
+  }
+  makeNormal() {
+    var myVideo = document.getElementById("video1");
+    myVideo.width = 420;
+  }
   render(){
     return(
         <div>
@@ -31,8 +58,17 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
+           <video id="video1" width="420">
+            <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <button onClick={this.playPause}>Play/Pause</button>
+          <button onClick={this.makeBig}>Big</button>
+          <button onClick={this.makeSmall}>Small</button>
+          <button onClick={this.makeNormal}>Normal</button>
             {/*<img className={styles.videoimg} src={VideoImg} /> */}
-           <Video controls loop
+
+           {/*}<Video controls loop
 
           copyKeys={{ sourceError: 'Video cannot be played in this browser.',
             poster: {VideoImg},
@@ -51,7 +87,7 @@ class LandingPage extends React.Component {
                 <Mute />
                 <Fullscreen />
             </Controls>
-        </Video>
+        </Video> */}
       </div>
     );
   }
