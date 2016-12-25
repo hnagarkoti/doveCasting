@@ -1,5 +1,5 @@
 import React from 'react';
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'react-router';
 // import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay } from 'react-html5video';
 
 // require('react-html5video/dist/ReactHtml5Video.css');
@@ -35,8 +35,7 @@ class LandingPage extends React.Component {
   }
   makeBig() {
     var myVideo = document.getElementById("video1");
-    console.log('called');
-    myVideo.width = 560;
+    myVideo.width = screen.width;
   }
   makeSmall() {
     var myVideo = document.getElementById("video1");
@@ -58,7 +57,7 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
-           <video id="video1" width="420" poster={VideoImg}>
+           <video id="video1" width="560" poster={VideoImg}>
             <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
