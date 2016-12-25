@@ -5,7 +5,10 @@ import { default as Video, Controls, Play, Mute, Seek, Fullscreen, Time, Overlay
 // require('react-html5video/dist/ReactHtml5Video.js');
 import styles from '../styles/App.css';
 // import '../styles/ReactHtml5Video.css';
-// import '../js/ReactHtml5Video.js'
+// import '../js/ReactHtml5Video.js';
+
+require('../styles/ReactHtml5Video.css');
+require('../js/ReactHtml5Video.js');
 
 import VideoImg from '../img/video-img.jpg';
 import FaceImg from '../img/facebook.png';
