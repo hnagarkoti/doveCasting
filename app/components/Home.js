@@ -58,7 +58,7 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
-           <video id="video1" width="420">
+           <video id="video1" width="420" poster={VideoImg}>
             <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
