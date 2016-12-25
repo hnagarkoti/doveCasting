@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
-           {/*}<img className={styles.videoimg} src={VideoImg} /> */}
+            {/*<img className={styles.videoimg} src={VideoImg} /> */}
            <Video controls loop
 
           copyKeys={{ sourceError: 'Video cannot be played in this browser.',
