@@ -13,6 +13,10 @@ import {Timeline} from "./components/Timeline";
 
 import Form from './components/Form';
 
+// require('react-html5video/dist/ReactHtml5Video.css');
+// require('react-html5video/dist/ReactHtml5Video.js');
+
+
 export default class App extends React.Component {
   constructor(props){
     super(props);

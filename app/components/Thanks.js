@@ -11,8 +11,8 @@ export default class Thanks extends React.Component {
     return(
         <div className={styles.landinginfo}>
           <h1>Dove Casting</h1>
-          <p className={styles.centerText}>Thank you for submitting your 
-          application. You will receive an email from DoveCasting@dove.com 
+          <p className={styles.centerText}>Thank you for submitting your
+          application. You will receive an email from DoveCasting@dove.com
           confirming that we have received your details.</p>
           <img className={styles.thankuimg} src={ThankuImg} />
           <span className={styles.soicalicons}>

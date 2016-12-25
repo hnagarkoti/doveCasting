@@ -55,7 +55,7 @@ module.exports = {
       test: /\.jpg$/,
       loader: "file-loader"
     },{
-      test: /\.(jpg|png)$/,
+      test: /\.(jpeg|png)$/,
       loader: 'url-loader',
       options: {
         limit: 2500000
