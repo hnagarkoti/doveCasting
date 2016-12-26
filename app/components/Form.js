@@ -11,7 +11,7 @@ export default class Form extends React.Component{
             <div>
                 <div className={styles.formOne}>
                     <div className={styles.formGroup}>
-                        <label for="firstName" className={styles.formLabel}>First name <b>*</b> <img src={InfoImg} /></label>
+                        <label for="firstName" className={styles.formLabel}>First name <b>*</b> </label>
                         <input type="text" className={styles.formControl} id="firstName" />
                     </div>
                     <div className={styles.formGroup}>
@@ -21,18 +21,18 @@ export default class Form extends React.Component{
                     <div className={styles.formGroup}>
                         <label for="gender" className={styles.formLabel}>Gender <b>*</b></label>
                         <div className={styles.formCheck}>
-                            <span><input type="radio" name="optradio" /><label>Option 1</label>
+                            <span><input type="radio" name="optradio" /><label>Female</label>
                             </span>
-                            <span>
-                                <label><input type="radio" name="optradio" /><label>Option 1</label></label>
+                            <span><input type="radio" name="optradio" /><label>Male</label>
                             </span>
-                            <span>
-                                <label><input type="radio" name="optradio" /><label>Option 1</label></label>
+                            <span><input type="radio" name="optradio" /><label>Prefer not to say</label>
                             </span>
                         </div>
                     </div>
                     <div className={styles.formGroup}>
-                        <label for="birthday" className={styles.formLabel}>Birthday <b>*</b></label>
+                        <label for="birthday" className={styles.formLabel}>Birthday <b>*</b>
+                        <img src={InfoImg} />
+                        </label>
                         <div className={styles.formFull}>
                             <select className={styles.formSelect} id="phoneNumber">
                                 <option>Day</option>
@@ -68,7 +68,9 @@ export default class Form extends React.Component{
                         </select>
                     </div>
                     <div className={styles.formGroup}>
-                        <label for="nationality" className={styles.formLabel}>Nationality <b>*</b></label>
+                        <label for="nationality" className={styles.formLabel}>Nationality <b>*</b>
+                        <img src={InfoImg} />
+                        </label>
                         <select className={styles.formControl} id="nationality">
                             <option>Select country</option>
                             <option>2</option>
@@ -78,20 +80,26 @@ export default class Form extends React.Component{
                         </select>
                     </div>
                     <div className={styles.formGroup}>
-                        <label for="occupation" className={styles.formLabel}>Occupation <b>*</b></label>
+                        <label for="occupation" className={styles.formLabel}>Occupation <b>*</b>
+                        <img src={InfoImg} />
+                        </label>
                         <input type="text" className={styles.formControl} id="lastName" />
                     </div>
                     <div className={styles.formGroup}>
-                        <label for="email" className={styles.formLabel}>Email <b>*</b></label>
+                        <label for="email" className={styles.formLabel}>Email <b>*</b>
+                        <img src={InfoImg} />
+                        </label>
                         <input type="text" className={styles.formControl} id="email" 
                         placeholder="Enter email address" />
                     </div>
                     <div className={styles.formGroup}>
-                        <label for="phoneNumber" className={styles.formLabel}>Phone number <b>*</b></label>
+                        <label for="phoneNumber" className={styles.formLabel}>Phone number <b>*</b>
+                        <img src={InfoImg} />
+                        </label>
                         <div className={styles.formFull}>
                         <select className={styles.formSelect} id="phoneNumber">
-                            <option>1</option>
-                            <option>2</option>
+                            <option>+</option>
+                            <option>+ 91</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
@@ -100,7 +108,7 @@ export default class Form extends React.Component{
                         placeholder="Enter phone number"/>
                         </div>
                     </div>
-                    <button onClick={this.register} >register</button>
+                    <button className={styles.register}>continue</button>
                 </div>
             </div>
         )
