@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../styles/App.css';
 import InfoImg from '../img/infoicon.png';
-export default class Form extends React.Component{
+export default class Form1 extends React.Component{
     constructor(props){
         super(props);
     }
@@ -89,7 +89,7 @@ export default class Form extends React.Component{
                         <label for="email" className={styles.formLabel}>Email <b>*</b>
                         <img src={InfoImg} />
                         </label>
-                        <input type="text" className={styles.formControl} id="email" 
+                        <input type="text" className={styles.formControl} id="email"
                         placeholder="Enter email address" />
                     </div>
                     <div className={styles.formGroup}>
@@ -104,7 +104,7 @@ export default class Form extends React.Component{
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <input type="tel" className={styles.formInput} id="number"  
+                        <input type="tel" className={styles.formInput} id="number"
                         placeholder="Enter phone number"/>
                         </div>
                     </div>
@@ -113,4 +113,4 @@ export default class Form extends React.Component{
             </div>
         )
     }
-} 
+}

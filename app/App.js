@@ -11,7 +11,7 @@ import {Home} from "./components/Home";
 import Thanks from "./components/Thanks";
 import Timeline from "./components/Timeline";
 
-import Form from './components/Form';
+import Form1 from './components/Form1';
 
 // require('react-html5video/dist/ReactHtml5Video.css');
 // require('react-html5video/dist/ReactHtml5Video.js');
@@ -29,7 +29,7 @@ export default class App extends React.Component {
             <Route path={"casting"} component={Home}/>
             <Route path={"timeline"} component={Timeline}/>
             <Route path={"thanks"} component={Thanks}/>
-            <Route path={"form"} component={Form}/>
+            <Route path={"form"} component={Form1}/>
           </Route>
         </Router>
     );
