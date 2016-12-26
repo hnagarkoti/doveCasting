@@ -9,7 +9,7 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import {Root} from "./components/Root";
 import {Home} from "./components/Home";
 import Thanks from "./components/Thanks";
-import {Timeline} from "./components/Timeline";
+import Timeline from "./components/Timeline";
 
 import Form from './components/Form';
 
