@@ -14,10 +14,10 @@ body {
 .background{
     background-color: #fff;float: left;width: 100%;height: auto;
 }
-.topheader{
+.topHeader{
     float: left;width: 100%;padding: 10px 0;margin: 0;
 }
-.topheader img{
+.topHeader img{
     float: left;width: 100%;height: auto;
 }
 .content{
@@ -66,3 +66,114 @@ body {
 .imgicons{
     width:28px; height:28px;padding-right: 5px;
 }
+
+.formOne{
+    float: left;width: 100%;padding: 0 32%;
+    margin: 0;height: auto;text-align: center;box-sizing: border-box;
+}
+.formOne .formGroup{
+    float: left; width: 100%; height: auto;margin-bottom: 15px;
+}
+.formGroup .formLabel{
+    display: inline-block; max-width: 100%; float: left;
+    margin-bottom: 5px; font-weight: 400; text-align: left;
+    color: #5c5c5c;
+}
+.formGroup .formLabel span{
+    font-size: 14px;
+}
+.formGroup .formLabel b{
+    color: #ff0000;font-size: 22px;
+}
+.formGroup .formControl{
+    display: block;width: 100%;height: 35px; float: left;
+    padding: 0px 5px;font-size: 14px;line-height: 1.42857143;
+    color: #555;background-color: #fff;background-image: none;
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    box-sizing: inherit;
+}
+.formGroup .formSelect{
+    display: block;width: 70px;height: 35px; float: left;
+    padding: 0px 5px;font-size: 14px;line-height: 1.42857143;
+    color: #555;background-color: #fff;background-image: none;
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    box-sizing: inherit;margin-right: 14px;
+}
+.formGroup .formFull{
+    float: left; width: 100%; height: auto;
+}
+.formGroup .formInput{
+    display: block;height: 35px;float: left;padding: 0px 5px;
+    font-size: 14px;line-height: 1.42857143;color: #555;
+    background-color: #fff;background-image: none;box-sizing: inherit;
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/*.formGroup .formCheck{
+        float: left; width: 100%; height: auto;
+}
+.formGroup .formCheck span{
+    float: left;
+}
+.formGroup .formCheck span input{
+}*/
+
+
+/*[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}*/
