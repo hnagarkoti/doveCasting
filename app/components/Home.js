@@ -57,15 +57,16 @@ class LandingPage extends React.Component {
            to be considered for casting please click on the
            Register button below.</p>
            <h5>What can you expect from the casting process?</h5>
-          <video id="video1" width="560" poster={VideoImg}>
+          {/*<video id="video1" width="560" poster={VideoImg}>
             <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4" type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
           <button onClick={this.playPause}>Play/Pause</button>
           <button onClick={this.makeBig}>Big</button>
           <button onClick={this.makeSmall}>Small</button>
-          <button onClick={this.makeNormal}>Normal</button> 
-
+          <button onClick={this.makeNormal}>Normal</button> */}
+          <iframe src="https://www.youtube.com/embed/FJx3qgFb2qQ" className={styles.iframe}
+          frameborder="0" allowfullscreen></iframe>
 
       </div>
     );

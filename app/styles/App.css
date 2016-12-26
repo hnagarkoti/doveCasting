@@ -49,6 +49,9 @@ body {
 .landinginfo .videoimg{
     float: left;width: 100%;height: auto;
 }
+.landinginfo .iframe{
+    width: 100%; height: 338px;
+}
 .landinginfo button{
     margin: 50px 0px 0px;border: 2px solid #dfc686;background: transparent;
     text-transform: capitalize;padding: 7px 45px;font-size: 12px;

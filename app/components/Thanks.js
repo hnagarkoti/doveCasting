@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/App.css';
 
-import ThankuImg from '../img/thank-you.jpg';
+import ThankuImg from '../img/thankyou.jpg';
 import FaceImg from '../img/facebook.png';
 import TwitImg from '../img/twitter.png';
 import MailImg from '../img/gmail.png';
